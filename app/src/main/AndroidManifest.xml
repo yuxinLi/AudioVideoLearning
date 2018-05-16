@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.example.audiovideolearning"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--获取手机录音机使用权限，听写、识别、语义理解需要用到此权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <!-- SD卡权限  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".utils.audio.record.activity.ListActivity"/>
+        <activity android:name=".utils.recordvideo3.VedioRecordActivity"/>
+        <activity android:name=".utils.recordvideo3.VideoPlayActivity"/>
+        <activity android:name=".utils.audio.record.activity.AudioRecordActivity"/>
+        <activity android:name=".utils.audio.play.AudioPlayActivity"/>
+        <activity android:name=".utils.video.play.VideoPlayActivity"/>
+        <activity android:name=".utils.recordVideo.MediaMuxerActivity"/>
+        <activity android:name=".utils.recordvideo2.audiovideosample.RecordActivity"/>
+        <activity android:name=".utils.recordvideo3.Record3Activity"/>
+        <!--<activity android:name=".utils.audio.play.AudioPlayActivity"/>-->
+    </application>
+
+</manifest>
