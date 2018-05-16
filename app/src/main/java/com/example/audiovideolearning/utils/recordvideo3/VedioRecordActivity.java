@@ -1,5 +1,6 @@
 package com.example.audiovideolearning.utils.recordvideo3;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -39,6 +40,7 @@ public class VedioRecordActivity extends AppCompatActivity implements VideoRecor
     private SensorManager sm;
     private Sensor sensor;
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

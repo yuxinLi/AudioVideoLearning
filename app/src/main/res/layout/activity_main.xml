@@ -33,7 +33,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="#33FF0000"
-            android:text="视频 录制混合"
+            android:text="视频 播放"
             android:layout_marginTop="10dp"
             />
 
